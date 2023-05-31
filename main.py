@@ -634,4 +634,4 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             await super().stop() 
             self.LOGGER(__name__).info("Bot stopped.")
             
-            .run()
+            NubBot.run()
