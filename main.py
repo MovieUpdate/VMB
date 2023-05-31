@@ -596,7 +596,8 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         QueueDB.update({cb.from_user.id: []})
         FormtDB.update({cb.from_user.id: None})
         
-      class Bot(Client): 
+        class Bot(Client): 
+
 def __init__(self): 
 super().__init__( 
 name="video-merger-bot", 
