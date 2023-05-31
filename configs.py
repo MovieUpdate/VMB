@@ -4,7 +4,7 @@ import os
 
 
 class Config(object):
-    API_ID = os.environ.get("")
+    API_ID = os.environ.get("26283171")
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merger_Bot")
