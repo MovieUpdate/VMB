@@ -623,18 +623,6 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️") 
             for id in     async def stop(self, *args): 
          await super().stop() 
-         self.LOGGER(__name__).info("Bot stopped."): 
-              try: await self.send_message(id, f"**__{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**") 
-              except: pass 
-        if Config.LOG_CHANNEL: 
-          try: 
-            curr = datetime.now(timezone("Asia/Kolkata")) 
-            date = curr.strftime('%d %B, %Y') 
-            time = curr.strftime('%I:%M:%S %p') 
-            await self.send_message(Config.LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅                          Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>")
+         self.LOGGER(__name__).info("Bot stopped.")
 
-        async def stop(self, *args): 
-            await super().stop() 
-            return LOGGER.info("Bot stopped.")
-            
-            NubBot.run()
+NubBot.run()
