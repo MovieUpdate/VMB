@@ -598,8 +598,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
 
 
 class Bot(Client):  
-    
-      def __init__(self):  
+    def __init__(self):  
           super().__init__(  
               name="video-merger-bot",  
               api_id=Config.API_ID,  
