@@ -630,7 +630,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             time = curr.strftime('%I:%M:%S %p') 
             await self.send_message(Config.LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅                          Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>") 
                
-     async def stop(self, *args): 
-       await super().stop() 
-       print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
+        async def stop(self, *args): 
+          await super().stop() 
+          print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
 NubBot.run()
