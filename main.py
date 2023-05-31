@@ -595,6 +595,8 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await delete_all(root=f"{Config.DOWN_PATH}/{cb.from_user.id}/")
         QueueDB.update({cb.from_user.id: []})
         FormtDB.update({cb.from_user.id: None})
-
+      elif "closeMeh" in cb.data: 
+         await cb.message.delete(True) 
+         await cb.message.reply_to_message.delete(True)
 
 NubBot.run()
