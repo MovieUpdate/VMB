@@ -621,7 +621,8 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             bind_address = "0.0.0.0"
             await web.TCPSite(app, bind_address, PORT).start() 
             print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️") 
-            for id in     async def stop(self, *args): 
+            for id in     
+        async def stop(self, *args): 
          await super().stop() 
          self.LOGGER(__name__).info("Bot stopped.")
 
