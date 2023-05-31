@@ -621,10 +621,10 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             await web.TCPSite(app, "0.0.0.0", 8080).start() 
             print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️") 
             for id in Config.ADMIN: 
-            try: await self.send_message(id, f"**__{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**") 
+              try: await self.send_message(id, f"**__{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**") 
 except: pass 
-if Config.LOG_CHANNEL: 
-try: 
+        if Config.LOG_CHANNEL: 
+          try: 
 curr = datetime.now(timezone("Asia/Kolkata")) 
 date = curr.strftime('%d %B, %Y') 
 time = curr.strftime('%I:%M:%S %p') 
